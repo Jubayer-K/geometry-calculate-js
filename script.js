@@ -1,6 +1,13 @@
-document.getElementById("base").addEventListener("keyup", function (event) {
+document.getElementById("hight").addEventListener("keyup", function (event) {
     const text = event.target.value;
     const calculateBtn = document.getElementById("btn-calculate");
+    if (text !== "") {
+      calculateBtn.removeAttribute("disabled", true);
+    }
+  });
+document.getElementById("length").addEventListener("keyup", function (event) {
+    const text = event.target.value;
+    const calculateBtn = document.getElementById("btn-rect-calculate");
     if (text !== "") {
       calculateBtn.removeAttribute("disabled", true);
     }
