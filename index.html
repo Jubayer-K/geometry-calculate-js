@@ -27,14 +27,36 @@
                         <input id="hight" class="rounded-lg text-center w-14 placeholder:text-gray-600" type="text" placeholder="h">
                     </div>
                     <div class="card-actions">
-                        <button onclick='triangleCalculate()' id="btn-calculate" class="btn btn-primary px-8">Calculate</button>
+                        <button disabled onclick='triangleCalculate()' id="btn-calculate" class="btn btn-primary px-8">Calculate</button>
                     </div>
                 </div>
             </div>
             <div class="mt-8">
-                <h2 class=" text-center text-2xl">Output</h2>
+                <h2 class=" text-center text-2xl mb-2">Output</h2>
                 <div id="final-output" class="py-4 px-40 border-solid border-2 border-gray-600 rounded-xl">
-
+                </div>
+            </div>
+        </div>
+        <div class="h-screen flex flex-col items-center justify-center">
+            <div class="card w-96 bg-base-100 shadow-xl mx-auto">
+                <figure class="px-10 pt-10">
+                    <img src="assets/images/rectangle.png" alt="triangle-shape" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h1 class="card-title text-4xl">Rectangle</h1>
+                    <p>Area = W X L</p>
+                    <div class="flex gap-2">
+                        <input id="width" class="rounded-lg text-center w-14 placeholder:text-gray-600" type="text" placeholder="b">
+                        <input id="length" class="rounded-lg text-center w-14 placeholder:text-gray-600" type="text" placeholder="h">
+                    </div>
+                    <div class="card-actions">
+                        <button onclick='rectangleCalculate()' id="btn-calculate" class="btn btn-primary px-8">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8">
+                <h2 class=" text-center text-2xl mb-2">Output</h2>
+                <div id="rect-output" class="py-4 px-40 border-solid border-2 border-gray-600 rounded-xl">
                 </div>
             </div>
         </div>
