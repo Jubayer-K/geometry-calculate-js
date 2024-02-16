@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="assets/images/triangle.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Geometry Calculation</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="h-screen flex flex-col items-center justify-center">
+            <div class="card w-96 bg-base-100 shadow-xl mx-auto">
+                <figure class="px-10 pt-10">
+                    <img src="assets/images/triangle.png" alt="triangle-shape" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h1 class="card-title text-4xl">Triangle</h1>
+                    <p>Area = 0.5 X b X h</p>
+                    <div class="flex gap-2">
+                        <input id="base" class="rounded-lg text-center w-14 placeholder:text-gray-600" type="text" placeholder="b">
+                        <input id="hight" class="rounded-lg text-center w-14 placeholder:text-gray-600" type="text" placeholder="h">
+                    </div>
+                    <div class="card-actions">
+                        <button onclick='triangleCalculate()' id="btn-calculate" class="btn btn-primary px-8">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8">
+                <h2 class=" text-center text-2xl">Output</h2>
+                <div id="final-output" class="py-4 px-40 border-solid border-2 border-gray-600 rounded-xl">
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
